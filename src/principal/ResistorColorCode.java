@@ -40,4 +40,21 @@ public class ResistorColorCode {
 
         return firstColor + " " + secondColor + " " + multiplierColor + " dourado";
     }
+    
+    /*
+     * Objetivo: Essa classe contém a lógica principal para converter um valor de resistência em ohms na sequência de cores correspondente.
+     * Atributo colorMapping: Esta variável é uma instância da classe ColorMapping, ela permite que a classe ResistorColorCode utilize o mapeamento de cores para os dígitos.
+     * Construtor ResistorColorCode: Ele inicializa o atributo colorMapping quando um objeto dessa classe é criado, nesse caso vai permitir que outros métodos da classe usem colorMapping para acessar as cores.
+     * Método calculateColorCode:
+     * Input: Recebe uma string representando o valor do resistor, como "4.7k ohms".
+     * Remoção de ohms: A string " ohms" é removida, ficando apenas o valor numérico.
+     * Conversão de Valor:
+     * Se o valor contém "k", ele é multiplicado por 1.000.
+     * Se contém "M", é multiplicado por 1.000.000.
+     * Caso contrário, ele é tratado como um valor simples.
+     * Identificação dos Dígitos: O primeiro e segundo dígitos são extraídos para determinar as cores.
+     * Cálculo do Multiplicador: O multiplicador é determinado pelo número de dígitos restantes após os dois primeiros.
+     * Obtenção das Cores: Usando o objeto colorMapping, as cores correspondentes aos dígitos e ao multiplicador são obtidas.
+     * Retorno: A função retorna a sequência de cores, adicionando a cor dourada para a tolerância.
+     */
 }

@@ -24,5 +24,14 @@ public class ColorMapping {
     public String getColor(char digit) {
         return colorCodes.get(digit);
     }
+    
+	/*
+	 * Objetivo: Mapear os dígitos numéricos (0 a 9) para as suas respectivas cores.
+	 * Importação das Bibliotecas: HashMap e Map eu importei para criar um mapeamento entre os dígitos e suas cores correspondentes. 
+	 * Mapeamento de Cores (colorCodes): É uma variável estática e final, o que significa que é única para todas as instâncias da classe e seu valor não pode ser alterado. 
+	 * Então nesse caso o mapeamento é feito dentro de um bloco static que é executado quando a classe é carregada.
+	 * Método getColor: Este método recebe um dígito (caractere) como argumento e retorna a cor correspondente usando o colorCodes. 
+	 * Por exemplo, se o dígito for '2', ele retornará "vermelho".
+	 */
 }
 
